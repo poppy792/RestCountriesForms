@@ -141,5 +141,5 @@ namespace WindowsFormsCountries
  List<String> lRegions = lCountries.Where(o => o.sRegion != "").Select(o =>o.sRegion).Distinct().ToList();
  //link za dohvaćanje distinct djelova liste (dohvaćanje jedinstvenih vrijednosti liste)
  
-     
+     Kod dodavanja nov države mora se pozvati ona lista u koju smo dodali novu državu. 
  */
