@@ -169,6 +169,7 @@
             // 
             // Pregled
             // 
+            this.Pregled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Pregled.Controls.Add(this.btnSearch);
             this.Pregled.Controls.Add(this.inptSearch);
             this.Pregled.Controls.Add(this.lblSearch);
@@ -183,10 +184,10 @@
             this.Pregled.Size = new System.Drawing.Size(926, 469);
             this.Pregled.TabIndex = 0;
             this.Pregled.Text = "Karta svijeta";
-            this.Pregled.UseVisualStyleBackColor = true;
             // 
             // Unos
             // 
+            this.Unos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Unos.Controls.Add(this.inptNewArea);
             this.Unos.Controls.Add(this.lblNewArea);
             this.Unos.Controls.Add(this.btnSave);
@@ -206,7 +207,6 @@
             this.Unos.Size = new System.Drawing.Size(926, 469);
             this.Unos.TabIndex = 1;
             this.Unos.Text = "Unos";
-            this.Unos.UseVisualStyleBackColor = true;
             // 
             // tabPage1
             // 
@@ -246,7 +246,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(32, 363);
+            this.btnSearch.Location = new System.Drawing.Point(38, 363);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(105, 32);
             this.btnSearch.TabIndex = 7;
@@ -257,7 +257,7 @@
             // lblNewCode
             // 
             this.lblNewCode.AutoSize = true;
-            this.lblNewCode.Location = new System.Drawing.Point(32, 43);
+            this.lblNewCode.Location = new System.Drawing.Point(114, 31);
             this.lblNewCode.Name = "lblNewCode";
             this.lblNewCode.Size = new System.Drawing.Size(70, 13);
             this.lblNewCode.TabIndex = 0;
@@ -266,7 +266,7 @@
             // lblNewCountry
             // 
             this.lblNewCountry.AutoSize = true;
-            this.lblNewCountry.Location = new System.Drawing.Point(32, 73);
+            this.lblNewCountry.Location = new System.Drawing.Point(114, 69);
             this.lblNewCountry.Name = "lblNewCountry";
             this.lblNewCountry.Size = new System.Drawing.Size(77, 13);
             this.lblNewCountry.TabIndex = 1;
@@ -275,7 +275,7 @@
             // lblNewPopulation
             // 
             this.lblNewPopulation.AutoSize = true;
-            this.lblNewPopulation.Location = new System.Drawing.Point(32, 103);
+            this.lblNewPopulation.Location = new System.Drawing.Point(114, 108);
             this.lblNewPopulation.Name = "lblNewPopulation";
             this.lblNewPopulation.Size = new System.Drawing.Size(124, 13);
             this.lblNewPopulation.TabIndex = 2;
@@ -284,7 +284,7 @@
             // lblNewCapital
             // 
             this.lblNewCapital.AutoSize = true;
-            this.lblNewCapital.Location = new System.Drawing.Point(32, 138);
+            this.lblNewCapital.Location = new System.Drawing.Point(114, 145);
             this.lblNewCapital.Name = "lblNewCapital";
             this.lblNewCapital.Size = new System.Drawing.Size(104, 13);
             this.lblNewCapital.TabIndex = 3;
@@ -293,7 +293,7 @@
             // lblRegion
             // 
             this.lblRegion.AutoSize = true;
-            this.lblRegion.Location = new System.Drawing.Point(32, 191);
+            this.lblRegion.Location = new System.Drawing.Point(114, 230);
             this.lblRegion.Name = "lblRegion";
             this.lblRegion.Size = new System.Drawing.Size(106, 13);
             this.lblRegion.TabIndex = 4;
@@ -301,43 +301,43 @@
             // 
             // inptNewCode
             // 
-            this.inptNewCode.Location = new System.Drawing.Point(173, 40);
+            this.inptNewCode.Location = new System.Drawing.Point(279, 28);
             this.inptNewCode.Name = "inptNewCode";
-            this.inptNewCode.Size = new System.Drawing.Size(99, 20);
+            this.inptNewCode.Size = new System.Drawing.Size(140, 20);
             this.inptNewCode.TabIndex = 5;
             // 
             // inptNewName
             // 
-            this.inptNewName.Location = new System.Drawing.Point(173, 70);
+            this.inptNewName.Location = new System.Drawing.Point(279, 66);
             this.inptNewName.Name = "inptNewName";
-            this.inptNewName.Size = new System.Drawing.Size(97, 20);
+            this.inptNewName.Size = new System.Drawing.Size(140, 20);
             this.inptNewName.TabIndex = 6;
             // 
             // inptNewPopulation
             // 
-            this.inptNewPopulation.Location = new System.Drawing.Point(173, 96);
+            this.inptNewPopulation.Location = new System.Drawing.Point(279, 105);
             this.inptNewPopulation.Name = "inptNewPopulation";
-            this.inptNewPopulation.Size = new System.Drawing.Size(96, 20);
+            this.inptNewPopulation.Size = new System.Drawing.Size(140, 20);
             this.inptNewPopulation.TabIndex = 7;
             // 
             // inptNewCapital
             // 
-            this.inptNewCapital.Location = new System.Drawing.Point(173, 122);
+            this.inptNewCapital.Location = new System.Drawing.Point(279, 142);
             this.inptNewCapital.Name = "inptNewCapital";
-            this.inptNewCapital.Size = new System.Drawing.Size(95, 20);
+            this.inptNewCapital.Size = new System.Drawing.Size(140, 20);
             this.inptNewCapital.TabIndex = 8;
             // 
             // inptNewRegion
             // 
             this.inptNewRegion.FormattingEnabled = true;
-            this.inptNewRegion.Location = new System.Drawing.Point(173, 183);
+            this.inptNewRegion.Location = new System.Drawing.Point(279, 227);
             this.inptNewRegion.Name = "inptNewRegion";
-            this.inptNewRegion.Size = new System.Drawing.Size(95, 21);
+            this.inptNewRegion.Size = new System.Drawing.Size(140, 21);
             this.inptNewRegion.TabIndex = 9;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(173, 239);
+            this.btnSave.Location = new System.Drawing.Point(216, 273);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(95, 37);
             this.btnSave.TabIndex = 10;
@@ -348,17 +348,17 @@
             // lblNewArea
             // 
             this.lblNewArea.AutoSize = true;
-            this.lblNewArea.Location = new System.Drawing.Point(32, 164);
+            this.lblNewArea.Location = new System.Drawing.Point(114, 187);
             this.lblNewArea.Name = "lblNewArea";
-            this.lblNewArea.Size = new System.Drawing.Size(75, 13);
+            this.lblNewArea.Size = new System.Drawing.Size(92, 13);
             this.lblNewArea.TabIndex = 11;
-            this.lblNewArea.Text = "Unesite zonu: ";
+            this.lblNewArea.Text = "Unesite površinu: ";
             // 
             // inptNewArea
             // 
-            this.inptNewArea.Location = new System.Drawing.Point(174, 157);
+            this.inptNewArea.Location = new System.Drawing.Point(279, 184);
             this.inptNewArea.Name = "inptNewArea";
-            this.inptNewArea.Size = new System.Drawing.Size(96, 20);
+            this.inptNewArea.Size = new System.Drawing.Size(140, 20);
             this.inptNewArea.TabIndex = 12;
             // 
             // Form1

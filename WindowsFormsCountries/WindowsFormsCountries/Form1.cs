@@ -144,15 +144,13 @@ namespace WindowsFormsCountries
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            GetCountries();
-            List<Country> lRestCountries = new List<Country>();
             string NewCode = inptNewCode.Text;
             string NewName = inptNewName.Text;
             string NewCapital = inptNewCapital.Text;
             int NewPopulation = Convert.ToInt32(inptNewPopulation.Text);
             float NewArea = Convert.ToSingle(inptNewArea.Text);
             string NewRegion = inptNewRegion.Text;
-            lRestCountries.Add(new Country
+            Country zemljica=new Country()
             {
                 sCode =NewCode,
                 sName = NewName,
@@ -160,7 +158,9 @@ namespace WindowsFormsCountries
                 nPopulation = NewPopulation,
                 fArea = NewArea,
                 sRegion = NewRegion
-            });
+            };
+            lCountries.Add(zemljica);
+            dataGridViewCountries.DataSource = lCountries;
         }
     }
 }
