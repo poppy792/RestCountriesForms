@@ -34,6 +34,11 @@ namespace WindowsFormsCountries
             /*COMBO BOX sortiranje*/
             List<string> lSortCriterias = new List<string>(){"‐","Glavni grad","Naziv","Broj stanovnika","Povrsina"};
             comboBoxSort.DataSource = lSortCriterias;
+
+            /*COMBO BOX NOVA REGIJA*/
+            List<string> lNewRegionOptions = lCountries.Where(o => o.sRegion != "").Select(o => o.sRegion).Distinct().ToList();
+            lNewRegionOptions.Insert(0, " - ");
+            inptNewRegion.DataSource = lNewRegionOptions;
         }
         public List<Country> GetCountries()
         {
@@ -127,6 +132,36 @@ namespace WindowsFormsCountries
             }
         }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var ContainsQuery = from c in lCountries where c.sName.Contains(inptSearch.Text) select c;
+            List<Country> lContainFilteredCountries = ContainsQuery.ToList();
+            for (int i = 0; i < lContainFilteredCountries.Count; i++)
+            {
+                dataGridViewCountries.DataSource = lContainFilteredCountries;
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            GetCountries();
+            List<Country> lRestCountries = new List<Country>();
+            string NewCode = inptNewCode.Text;
+            string NewName = inptNewName.Text;
+            string NewCapital = inptNewCapital.Text;
+            int NewPopulation = Convert.ToInt32(inptNewPopulation.Text);
+            float NewArea = Convert.ToSingle(inptNewArea.Text);
+            string NewRegion = inptNewRegion.Text;
+            lRestCountries.Add(new Country
+            {
+                sCode =NewCode,
+                sName = NewName,
+                sCapital = NewCapital,
+                nPopulation = NewPopulation,
+                fArea = NewArea,
+                sRegion = NewRegion
+            });
+        }
     }
 }
 
